@@ -1,0 +1,1819 @@
+CREATE A NEW NATIVE ANDROID APPLICATION FROM SCRATCH.
+
+==================================================
+PROJECT IDENTITY
+==================================================
+
+APP NAME:
+GUI
+
+DISPLAY NAME:
+GUI
+
+PACKAGE NAME:
+com.mobiexosuit.gui
+
+PRONUNCIATION:
+GUI is pronounced exactly like the English word "guy."
+
+IMPORTANT NAMING RULE:
+
+The assistant's name must always be displayed and written as:
+
+GUI
+
+Never display the assistant's name as "Guy."
+
+The physical 3D-printed phone stand and body are called:
+
+MOBI Exo Suit
+
+GUI is the face, personality, voice, assistant, and automation system
+living inside the MOBI Exo Suit.
+
+Relationship:
+
+MOBI Exo Suit = GUI's physical body
+GUI = the robotic character living inside that body
+
+==================================================
+PROJECT PURPOSE
+==================================================
+
+GUI is a detailed, animated robotic companion and device-control
+assistant for an Android phone mounted inside a custom 3D-printed
+MOBI Exo Suit.
+
+The phone display becomes GUI's face.
+
+GUI should:
+
+- look alive
+- respond to touch
+- respond to gestures
+- react to sound
+- optionally react to visual motion
+- listen for wake words
+- understand voice commands
+- speak naturally
+- allow interruption while speaking
+- open installed applications
+- perform web searches
+- control supported media playback
+- open casting controls
+- trigger registered Android automations
+- optionally use Shizuku for advanced device actions
+- provide an authenticated owner shell console
+- communicate status through facial expressions and spoken responses
+
+This must be a native Android application built with:
+
+- Kotlin
+- Jetpack Compose
+- Compose Canvas
+- coroutines
+- StateFlow
+- DataStore
+- lifecycle-aware Android components
+
+Do not create a web wrapper.
+
+Create a complete, compilable Android project.
+
+Do not leave placeholder TODO implementations for the core face,
+settings, speech, command, app-launching, or web-search functionality.
+
+==================================================
+1. CORE EXPERIENCE
+==================================================
+
+GUI must feel like a robotic character rather than a normal Android
+application.
+
+The primary interface is GUI's face.
+
+Normal interaction:
+
+IDLE
+-> WAKE WORD OR LISTENING GESTURE
+-> ATTENTIVE
+-> LISTENING
+-> UNDERSTANDING
+-> THINKING
+-> WORKING
+-> ACTION
+-> SPOKEN RESPONSE
+-> RETURN TO IDLE
+
+GUI's face must visually communicate every state.
+
+Do not make the primary interface a chat window.
+
+Temporary transcripts and status messages may appear near the bottom,
+but they must remain small and fade automatically.
+
+Do not permanently display buttons, settings icons, app bars, cards,
+or text over GUI's face.
+
+==================================================
+2. DETAILED HEROIC FACE
+==================================================
+
+Create GUI as a complete robotic face rather than floating eyes and a
+small mouth.
+
+Use Jetpack Compose Canvas, paths, clipping, gradients, glow layers,
+and animated geometry.
+
+Do not use emoji for GUI's face.
+
+Do not copy an existing superhero, movie robot, game character, or
+copyrighted character.
+
+GUI should have an original futuristic heroic appearance.
+
+FACE COMPONENTS:
+
+- two large mechanical eyes
+- independently animated upper eyelids
+- subtle lower eyelids
+- independently animated brows
+- a central nose bridge
+- subtle cheek structures
+- angular temple panels
+- forehead armor details
+- faint circuit paths
+- lower-face side panels
+- a small expressive mouth or voice aperture
+- a broad heroic jawline
+- an angular chin plate
+- subtle layered highlights that imply depth
+
+HEROIC JAWLINE:
+
+The jaw should begin broadly beneath the cheek structures and taper
+into a strong, clean, angular chin.
+
+The jaw should appear confident, futuristic, and heroic.
+
+It must not be excessively large, square, or blocky.
+
+The chin should have a segmented central plate.
+
+The jawline should remain faintly visible while GUI is idle.
+
+When GUI becomes confident, excited, successful, or is addressed using
+the wake word "BROHAM," the jaw illumination may briefly become
+brighter.
+
+FACEPLATE:
+
+Create a symmetrical dark graphite faceplate.
+
+Use subtle asymmetry only during expressions and animation.
+
+The display should look like the illuminated front of a robotic head.
+
+Use layered visual depth:
+
+Layer 1:
+Near-black background.
+
+Layer 2:
+Dark graphite outer faceplate.
+
+Layer 3:
+Secondary cheek, temple, forehead, and jaw panels.
+
+Layer 4:
+Glowing eyes, brows, mouth, and circuit accents.
+
+Layer 5:
+Soft light bloom.
+
+Layer 6:
+Very faint scan lines or moving energy effects.
+
+DEFAULT COLOR PALETTE:
+
+Background:
+#020406
+
+Outer faceplate:
+#071015
+
+Secondary plates:
+#0C1A20
+
+Primary light:
+#00D9FF
+
+Bright highlight:
+#8CF3FF
+
+COLOR PRESETS:
+
+- GUI Cyan
+- Electric Blue
+- Reactor Green
+- Violet
+- Amber
+- Red
+- White
+- Custom Color
+
+GUI's face must remain readable from several feet away.
+
+Respect screen cutouts and front-facing camera locations.
+
+Do not place important eye details beneath a display cutout.
+
+==================================================
+3. FACIAL EXPRESSIONS
+==================================================
+
+Create a centralized expression system.
+
+Expressions:
+
+- IDLE_HAPPY
+- NEUTRAL
+- ATTENTIVE
+- LISTENING
+- TRANSCRIBING
+- THINKING
+- WORKING
+- SPEAKING
+- SUCCESS
+- CURIOUS
+- EXCITED
+- SLEEPY
+- FOCUSED
+- SURPRISED
+- LOVE
+- COOL
+- GOOFY
+- ANNOYED
+- CONFUSED
+- ERROR
+- HEROIC
+- PRIVACY
+- SLEEPING
+
+Expressions must affect:
+
+- eye geometry
+- eyelid position
+- lower-eyelid tension
+- brow height
+- brow angle
+- eye direction
+- mouth shape
+- cheek illumination
+- temple illumination
+- jaw illumination
+- circuit animation
+- glow intensity
+- animation speed
+- blink behavior
+
+Use smooth transitions and shape interpolation when practical.
+
+Do not swap entire face images.
+
+==================================================
+4. NATURAL IDLE BEHAVIOR
+==================================================
+
+GUI should appear alive during idle mode.
+
+Use randomized, non-repeating behavior:
+
+- single blink
+- occasional double blink
+- slow partial blink
+- glance left
+- glance right
+- glance upward
+- glance downward
+- slight brow adjustment
+- tiny mouth movement
+- subtle cheek-light movement
+- faint jaw-light movement
+- brief circuit pulse
+- occasional slow environmental scan
+- slight faceplate shift suggesting posture
+
+Include meaningful quiet periods.
+
+Do not animate every component continuously.
+
+PERSONALITY MODES:
+
+CALM:
+Long pauses, slower blinks, and subtle movements.
+
+NORMAL:
+Balanced movement and expression frequency.
+
+ENERGETIC:
+More frequent glances, brighter reactions, and more spontaneous
+expressions.
+
+Pause unnecessary animations when the application is not visible.
+
+Reduce animation frequency when the device is in GUI's sleeping state.
+
+==================================================
+5. TOUCH INTERACTIONS
+==================================================
+
+Touching GUI's face should produce location-specific reactions.
+
+Tap left eye:
+Left eye winks and GUI briefly becomes curious.
+
+Tap right eye:
+Right eye winks.
+
+Tap forehead:
+GUI becomes surprised.
+
+Tap nose bridge:
+GUI briefly becomes cross-eyed or highly focused.
+
+Tap mouth:
+GUI makes a goofy expression.
+
+Tap cheek:
+GUI glances toward that cheek.
+
+Tap jaw:
+GUI enters a brief HEROIC expression and illuminates the jaw.
+
+Double tap:
+GUI becomes excited.
+
+Long press:
+GUI displays the LOVE expression.
+
+Rapid repeated taps:
+GUI becomes playfully annoyed.
+
+Touch and drag:
+GUI's eyes follow the finger within visually safe movement limits.
+
+Release:
+GUI's eyes smoothly return to center.
+
+Two-finger tap:
+Emergency stop. Immediately stop speech, listening, and nonessential
+assistant work, then return GUI to idle.
+
+Provide settings to disable touch reactions or haptic feedback.
+
+==================================================
+6. NAVIGATION GESTURES
+==================================================
+
+GUI's face must not contain a permanently visible Settings button.
+
+Use gestures:
+
+Swipe down from near the top:
+Open Quick Controls.
+
+Long swipe down:
+Open full Settings.
+
+Swipe up from near the bottom:
+Open Command Center.
+
+Swipe left:
+Open Expression Lab.
+
+Swipe right:
+Open Automation History.
+
+Two-finger swipe down:
+Toggle Privacy Mode.
+
+Two-finger swipe up:
+Start manual push-to-talk listening.
+
+Pinch inward:
+Enter Sleep Mode.
+
+Pinch outward:
+Wake GUI.
+
+Three-finger long press:
+Open the protected Owner Console authentication screen.
+
+Show a small first-run gesture tutorial.
+
+Create a Gesture Practice screen.
+
+Allow gestures to be individually enabled, disabled, or restored to
+defaults.
+
+Avoid conflicts with Android system navigation whenever practical.
+
+==================================================
+7. ASSISTANT STATE MACHINE
+==================================================
+
+Create one authoritative AssistantStateMachine.
+
+States:
+
+- IDLE
+- ATTENTIVE
+- LISTENING
+- TRANSCRIBING
+- UNDERSTANDING
+- THINKING
+- WORKING
+- SPEAKING
+- INTERRUPTED
+- SUCCESS
+- CONFUSED
+- ERROR
+- SLEEPING
+- PRIVACY
+
+Use StateFlow.
+
+All interface components and assistant subsystems must observe the same
+state.
+
+Do not spread unrelated listening, speaking, working, and interruption
+booleans throughout the application.
+
+The state machine should control:
+
+- facial expression
+- animation behavior
+- transcript visibility
+- microphone activity
+- speech output
+- command execution
+- follow-up listening
+- interruption
+- status text
+
+==================================================
+8. WAKE WORDS
+==================================================
+
+GUI supports three equivalent wake words:
+
+1. GUI
+2. DUDE
+3. BROHAM
+
+GUI is pronounced exactly like:
+
+"guy"
+
+Speech and wake-word matching should use the phonetic spoken form
+"guy" where necessary.
+
+The interface must always display the assistant name as:
+
+GUI
+
+Never display "Guy" as the assistant name.
+
+Create HotwordEngine as an interface supporting multiple wake words.
+
+Default wake-word configuration:
+
+- "guy"
+- "dude"
+- "broham"
+
+Settings > Voice > Wake Words must include:
+
+Master Wake Words ON/OFF
+
+Individual toggles:
+
+GUI, pronounced "guy"     ON/OFF
+DUDE                      ON/OFF
+BROHAM                    ON/OFF
+
+Default all three to ON.
+
+Also include:
+
+- Require Wake Word ON/OFF
+- Hotword sensitivity when supported
+- Background Wake Listening ON/OFF
+- Wake confirmation sound ON/OFF
+
+Do not falsely claim that Android SpeechRecognizer alone provides a
+reliable always-on wake-word engine.
+
+Create a replaceable HotwordEngine architecture.
+
+If a reliable on-device wake-word engine cannot be included in the
+first build, provide these fallbacks:
+
+- tap the face to listen
+- two-finger swipe up
+- Listen button in Quick Controls
+- Listen button in Command Center
+
+If wake-word listening runs in the background, use an appropriate
+foreground service and visible persistent notification when required
+by Android.
+
+Always show a microphone-active indicator when audio is being captured.
+
+==================================================
+9. DIFFERENT WAKE-WORD REACTIONS
+==================================================
+
+GUI should react slightly differently depending on the wake word.
+
+When addressed as "GUI":
+
+- normal attentive expression
+- eyes focus forward
+- begin listening immediately
+
+When addressed as "DUDE":
+
+- one brow rises briefly
+- slightly casual expression
+- begin listening immediately
+
+When addressed as "BROHAM":
+
+- confident eye movement
+- brief heroic jaw illumination
+- begin listening immediately
+
+These acknowledgment animations must be subtle and quick.
+
+Do not wait for the animation to finish before listening.
+
+The user must be able to say:
+
+"GUI, open Spotify."
+
+"Dude, search for Android automation."
+
+"Broham, open casting."
+
+GUI must capture the command immediately after the wake word.
+
+==================================================
+10. SPEECH RECOGNITION
+==================================================
+
+Create SpeechInputManager.
+
+Use Android's supported speech-recognition interfaces.
+
+Prefer on-device recognition when the installed recognition service
+supports it.
+
+Support:
+
+- partial recognition results
+- final recognition results
+- language selection
+- recognition cancellation
+- timeouts
+- error handling
+- permission handling
+- lifecycle cleanup
+
+Display a small temporary partial transcript near the bottom of the
+face.
+
+Fade the transcript after processing.
+
+Do not store raw microphone audio.
+
+Do not save recordings.
+
+If the selected recognition provider requires network access, clearly
+show that in the relevant settings or setup information.
+
+Recognition errors must not crash the app.
+
+==================================================
+11. NATURAL VOICE OUTPUT
+==================================================
+
+Create VoiceOutputManager with two interchangeable backends.
+
+PRIMARY BACKEND:
+
+On-device neural text-to-speech using MediaPipe Text-to-Speech with a
+Kokoro model when dependencies and model integration are supported.
+
+Desired characteristics:
+
+- natural neural voice
+- low latency
+- streaming playback
+- speech begins before the entire response is synthesized
+- clause-by-clause generation
+- immediate cancellation
+- multiple available voices
+- adjustable speech rate
+- adjustable output volume
+- pitch control where supported
+- complete lifecycle cleanup
+
+SECONDARY BACKEND:
+
+Android TextToSpeech.
+
+Allow GUI to use any compatible system TTS engine installed on the
+device.
+
+This allows the device owner to install and select a higher-quality
+Android TTS engine later.
+
+If MediaPipe or the Kokoro model cannot be included in the initial
+build:
+
+- fully implement Android TextToSpeech
+- retain the MediaPipeVoiceBackend interface
+- provide a clear unavailable status
+- do not pretend Kokoro is active
+
+Do not imitate a real person's voice.
+
+Do not perform voice cloning in this version.
+
+VOICE SETTINGS:
+
+- Voice Output ON/OFF
+- Voice Backend: Automatic / Kokoro / System TTS
+- Selected voice
+- Speech rate
+- Pitch where supported
+- Volume
+- Brief Response Mode
+- Speak confirmations ON/OFF
+- Speak errors ON/OFF
+- Speak working status ON/OFF
+
+GUI's voice personality should be:
+
+- natural
+- capable
+- warm
+- futuristic
+- relaxed
+- concise
+- confident
+- slightly playful
+- not excessively formal
+- not excessively chatty
+
+GUI may occasionally use concise responses such as:
+
+"Got you."
+"On it."
+"Yep."
+"Working on it."
+"Done."
+"Here you go."
+
+Do not have GUI constantly say "dude," "bro," or "broham."
+
+Those words are primarily wake names used by the user.
+
+==================================================
+12. BARGE-IN AND INTERRUPTION
+==================================================
+
+Interruption is mandatory.
+
+The user must not have to wait for GUI to finish speaking before giving
+another command.
+
+All three wake words must support interruption:
+
+- GUI
+- DUDE
+- BROHAM
+
+If GUI is speaking and detects any enabled wake word:
+
+1. Stop TTS playback immediately.
+2. Cancel streaming synthesis.
+3. Flush queued speech.
+4. Cancel the previous response job where appropriate.
+5. Cancel nonessential work associated only with the old response.
+6. Change the face from SPEAKING to ATTENTIVE.
+7. Begin listening to the new command immediately.
+8. Never resume the abandoned spoken response.
+
+Also interrupt GUI when:
+
+- the user taps the face while GUI is speaking
+- the user performs the push-to-talk gesture
+- the user presses Listen
+- the user performs a two-finger emergency-stop tap
+- user speech is detected during an enabled follow-up conversation
+  window
+
+Example:
+
+GUI:
+"Here are the results I found for..."
+
+User:
+"Dude, open Spotify."
+
+GUI must stop the old sentence immediately and process the Spotify
+command.
+
+Example:
+
+GUI:
+"Working on..."
+
+User:
+"Broham, stop."
+
+GUI must stop the appropriate interruptible operation.
+
+BARGE-IN REQUIREMENTS:
+
+- immediate TTS cancellation
+- no delayed continuation
+- no speaking over the user
+- close the old recognition or response job
+- start the new listening session
+- update the face instantly
+- prevent stale completion callbacks from restarting old speech
+
+Prevent GUI from interpreting its own speaker output as user speech.
+
+Use available Android audio-focus and echo-management strategies.
+
+Use a short configurable playback suppression period when needed.
+
+SETTINGS:
+
+- Allow Interruption ON/OFF
+- Interrupt by Wake Word ON/OFF
+- Interrupt by Tap ON/OFF
+- Conversation Follow-Up Window:
+  - Off
+  - 5 seconds
+  - 10 seconds
+  - 20 seconds
+
+Two-finger tap must always stop speech, regardless of standard
+interruption settings.
+
+==================================================
+13. FOLLOW-UP CONVERSATION WINDOW
+==================================================
+
+After GUI completes a response, optionally keep a short listening
+window open.
+
+During this window, the user does not need to repeat GUI, Dude, or
+Broham.
+
+Example:
+
+User:
+"GUI, open Spotify."
+
+GUI:
+"Opening Spotify."
+
+User:
+"Play my workout playlist."
+
+GUI should treat the second request as a continuation.
+
+Keep the microphone-active indicator visible for the entire follow-up
+window.
+
+Close the follow-up window when:
+
+- it times out
+- the user says stop listening
+- Privacy Mode is enabled
+- the app loses the necessary lifecycle state
+- microphone permission is removed
+- the user performs the emergency-stop gesture
+
+==================================================
+14. SPOKEN STATUS RESPONSES
+==================================================
+
+GUI should provide short spoken status updates.
+
+WORKING:
+
+- "Working on it."
+- "One moment."
+- "Got it."
+- "On it."
+
+SUCCESS:
+
+- "Done."
+- "Here you go."
+- "Opening it."
+- "Got you."
+
+FAILURE:
+
+- "I couldn't do that."
+- "I need permission for that."
+- "I didn't catch that."
+- "I don't know how to do that yet."
+
+Do not continuously repeat "working."
+
+For a longer action:
+
+1. Give at most one initial spoken working message.
+2. Show the WORKING facial animation.
+3. Give another spoken update only after a meaningful state change.
+4. Allow interruption throughout the operation.
+
+==================================================
+15. COMMAND PROCESSING
+==================================================
+
+Create:
+
+- ConversationManager
+- CommandParser
+- CommandRouter
+- ActionRegistry
+- AutomationEngine
+
+Convert recognized text into structured commands.
+
+Command categories:
+
+- OPEN_APP
+- WEB_SEARCH
+- OPEN_URL
+- MEDIA_CONTROL
+- CAST
+- SYSTEM_PANEL
+- GUI_SETTING
+- GUI_EXPRESSION
+- SLEEP
+- WAKE
+- AUTOMATION
+- OWNER_CONSOLE_REQUEST
+- QUERY
+- UNKNOWN
+
+Keep deterministic Android commands separate from open-ended
+conversation.
+
+Track short conversational context for follow-up commands.
+
+Never claim an action succeeded unless the action returned a successful
+result or the Android intent was successfully launched.
+
+==================================================
+16. INSTALLED APP LAUNCHING
+==================================================
+
+Create AppLauncher.
+
+Resolve installed launchable applications using user-visible app names.
+
+Examples:
+
+"GUI, open Spotify."
+
+"Dude, open YouTube."
+
+"Broham, open Calculator."
+
+"GUI, open Chrome."
+
+"Dude, open Android Settings."
+
+Do not hardcode support for only a few applications.
+
+If multiple apps match, GUI should ask which one.
+
+If an app is unavailable, GUI should say so.
+
+Use supported package-manager launch intents.
+
+==================================================
+17. WEB SEARCH
+==================================================
+
+Recognize phrases such as:
+
+"GUI, search for 3D-printed phone stands."
+
+"Dude, search the web for Android automation."
+
+"Broham, look up futuristic robot faces."
+
+Extract the query.
+
+Safely URI-encode the query.
+
+Open the user's selected browser or supported web-search handler.
+
+GUI may say:
+
+"Searching for futuristic robot faces."
+
+Do not automate browser taps when opening a supported search URL or
+intent is enough.
+
+==================================================
+18. MEDIA CONTROL
+==================================================
+
+Create MediaCommandManager.
+
+Support Android media-session functionality and supported media
+actions when authorized.
+
+Desired commands:
+
+- Play
+- Pause
+- Resume
+- Stop
+- Next song
+- Previous song
+- Open Spotify
+- Open YouTube Music
+- Play a supported playlist URI
+- Open a supported album or artist URI
+
+If notification-listener or media-control access is required, provide a
+clear setup screen.
+
+Do not claim playback occurred unless it actually began.
+
+If GUI can open Spotify but cannot automatically start the requested
+playlist:
+
+- open Spotify
+- explain that the requested playback could not be started
+  automatically
+
+==================================================
+19. CASTING
+==================================================
+
+Create CastingManager.
+
+Recognize commands:
+
+"GUI, cast to the screen."
+
+"Dude, open casting."
+
+"Broham, screen cast."
+
+"GUI, stop casting."
+
+Use supported Android media-routing, casting, display, or system-panel
+mechanisms.
+
+If direct casting is unavailable:
+
+- open the appropriate Android casting controls
+- say "Opening casting controls."
+
+Do not silently select a private target display.
+
+Respect Android confirmation requirements.
+
+==================================================
+20. SOUND REACTIONS
+==================================================
+
+Add optional environmental sound reactions.
+
+Do not store environmental audio.
+
+Classify only broad sound-intensity states:
+
+- QUIET
+- NORMAL
+- NOTICEABLE
+- LOUD
+- SUDDEN
+
+Reactions:
+
+NOTICEABLE:
+GUI becomes attentive and glances briefly.
+
+LOUD:
+GUI's eyes widen.
+
+SUDDEN:
+GUI shows a brief surprised expression.
+
+Return smoothly to idle.
+
+SETTINGS:
+
+- Sound Reactions ON/OFF
+- Sound Sensitivity
+- Reaction Strength
+
+Voice recognition always takes priority over decorative sound
+reactions.
+
+==================================================
+21. OPTIONAL VISION MODE
+==================================================
+
+Vision Mode must be OFF by default.
+
+Request camera permission only after the user explicitly enables Vision
+Mode.
+
+Use CameraX or another supported Android camera API.
+
+Initial on-device vision features:
+
+- ambient brightness estimation
+- significant general motion
+- basic motion direction
+- large nearby foreground change
+- wake GUI when significant motion is detected
+- glance toward motion when reliable coordinates are available
+- adjust face brightness within user-defined limits
+
+Do not implement facial identity recognition.
+
+Do not identify people.
+
+Do not store images or video by default.
+
+Do not secretly record.
+
+Do not upload camera frames to a remote service.
+
+Display a clear in-app camera-active indicator.
+
+Stop camera processing when:
+
+- Vision Mode is disabled
+- Privacy Mode is enabled
+- camera permission is revoked
+- application lifecycle no longer requires it
+- the camera becomes unavailable
+
+VISION SETTINGS:
+
+- Vision Mode ON/OFF
+- Motion Sensitivity
+- Eye-Follow Strength
+- Auto-Wake from Motion
+- Brightness Adaptation
+
+==================================================
+22. BATTERY, CHARGING, AND MOTION
+==================================================
+
+BATTERY REACTIONS:
+
+Normal battery:
+Normal GUI behavior.
+
+Low battery:
+GUI becomes slightly tired.
+
+Very low battery:
+GUI becomes sleepy and reduces glow.
+
+Charging begins:
+GUI performs an excited wake-up animation.
+
+While charging:
+Occasional subtle energy movement through faceplate circuits.
+
+Fully charged:
+Brief happy or heroic celebration.
+
+MOTION REACTIONS:
+
+Phone picked up:
+Wake GUI and use a curious expression.
+
+Orientation change:
+Eyes compensate subtly.
+
+Sudden safe movement:
+Brief surprised expression.
+
+Avoid excessive sensor polling.
+
+Handle missing sensors gracefully.
+
+==================================================
+23. QUICK CONTROLS
+==================================================
+
+Swipe down to open a compact translucent Quick Controls overlay.
+
+Include:
+
+- Listen
+- Stop
+- Privacy Mode
+- Sleep
+- Face Brightness
+- Voice Volume
+- Sound Reactions
+- Vision Mode
+- Open Settings
+
+Tap outside the overlay or swipe up to close it.
+
+The overlay must not permanently cover GUI's face.
+
+==================================================
+24. COMMAND CENTER
+==================================================
+
+Swipe up to open Command Center.
+
+Include large controls:
+
+- Listen
+- Open App
+- Web Search
+- Media
+- Casting
+- Automations
+- Expression Lab
+- Owner Console
+
+Include recent safe commands.
+
+Do not expose protected shell command history in the normal Command
+Center.
+
+==================================================
+25. EXPRESSION LAB
+==================================================
+
+Swipe left to enter Expression Lab.
+
+Allow the user to preview:
+
+- Idle Happy
+- Neutral
+- Attentive
+- Listening
+- Thinking
+- Working
+- Success
+- Curious
+- Excited
+- Sleepy
+- Focused
+- Surprised
+- Love
+- Cool
+- Goofy
+- Annoyed
+- Confused
+- Error
+- Heroic
+- Privacy
+
+Provide:
+
+RETURN TO AUTO
+
+Expression previews must not permanently disable GUI's state machine.
+
+==================================================
+26. SETTINGS
+==================================================
+
+Create clearly organized Settings.
+
+FACE:
+
+- Primary Color
+- Secondary Color
+- Custom Color
+- Face Brightness
+- Glow Intensity
+- Circuit Detail Intensity
+- Jaw Illumination
+- Animation Intensity
+- Personality: Calm / Normal / Energetic
+
+VOICE:
+
+- Voice Commands
+- Master Wake Words
+- GUI Wake Word
+- DUDE Wake Word
+- BROHAM Wake Word
+- Require Wake Word
+- Recognition Language
+- Voice Backend
+- Voice Selection
+- Speech Rate
+- Pitch
+- Voice Volume
+- Brief Responses
+- Speak Confirmations
+- Allow Interruption
+- Follow-Up Conversation Window
+
+SOUND:
+
+- Sound Reactions
+- Sensitivity
+- Reaction Strength
+
+VISION:
+
+- Vision Mode
+- Motion Sensitivity
+- Auto-Wake
+- Eye-Follow Strength
+- Brightness Adaptation
+
+GESTURES:
+
+- Enable Gestures
+- Configure Individual Gestures
+- Gesture Practice
+- Reset Gesture Defaults
+
+AUTOMATION:
+
+- App Launching
+- Web Search
+- Media Controls
+- Casting
+- Registered Actions
+- Shizuku Status
+- Owner Console
+- Automation History
+
+DISPLAY:
+
+- Clock Off / 12-Hour / 24-Hour
+- Keep Screen Awake
+- Immersive Mode
+
+PRIVACY:
+
+- Privacy Mode
+- Microphone Status
+- Camera Status
+- Background Listening Status
+- Clear Temporary Transcripts
+- Clear Automation History
+
+==================================================
+27. PRIVACY MODE
+==================================================
+
+Two-finger swipe down toggles Privacy Mode.
+
+When Privacy Mode is enabled:
+
+- stop microphone capture
+- stop hotword processing
+- stop speech recognition
+- stop sound reactions
+- stop camera processing
+- stop follow-up listening
+- stop background listening services
+- cancel active conversational listening
+- close active audio capture resources
+
+Use a recognizable PRIVACY facial expression.
+
+Allow local TTS for manually initiated actions unless the user enables
+Mute Voice in Privacy Mode.
+
+Show clear Privacy Mode status.
+
+==================================================
+28. OPTIONAL SHIZUKU INTEGRATION
+==================================================
+
+Add optional Shizuku integration.
+
+GUI must work normally when:
+
+- Shizuku is not installed
+- Shizuku is not running
+- Shizuku access is denied
+- the Shizuku binder disconnects
+
+SHIZUKU STATES:
+
+- NOT_INSTALLED
+- NOT_RUNNING
+- PERMISSION_REQUIRED
+- CONNECTED
+- DISCONNECTED
+- ERROR
+
+Use the official Shizuku API and provider dependencies when compatible.
+
+Track binder availability.
+
+Handle binder death.
+
+Request Shizuku authorization explicitly.
+
+Show Shizuku status in Settings and Permission Center.
+
+Create a RegisteredAction interface containing:
+
+- id
+- displayName
+- description
+- riskLevel
+- requiredCapability
+- parameterSchema
+- preview
+- execute
+- rollbackDescription when available
+
+Example registered actions:
+
+- open Wi-Fi settings
+- open Bluetooth settings
+- open display settings
+- change a supported brightness value
+- query package information
+- force-stop a specifically selected package after confirmation
+- launch approved Android system panels
+- execute an owner-created saved automation
+- perform other specifically implemented shell-level actions
+
+VOICE AUTOMATION RULE:
+
+Recognized voice commands must resolve to a registered action ID and
+validated parameters.
+
+Do not send raw recognized speech directly to a shell.
+
+Do not send generated assistant text directly to a shell.
+
+Do not send web content, clipboard text, camera text, or external text
+directly to a shell.
+
+==================================================
+29. PROTECTED OWNER CONSOLE
+==================================================
+
+Create a separate Owner Console for manually entered shell commands.
+
+ACCESS:
+
+Three-finger long press
+-> Android-supported biometric or device-credential authentication
+-> Owner Console
+
+The Owner Console may accept manually typed shell commands.
+
+Voice dictation may populate the command editor, but voice dictation
+must not execute the command automatically.
+
+The owner must manually review the command and press Run.
+
+Before execution, display:
+
+- exact command text
+- execution identity
+- whether Shizuku is connected
+- risk warning
+- Cancel button
+- Run button
+
+Require an additional confirmation for commands containing potentially
+high-impact operations such as:
+
+- package deletion
+- filesystem deletion
+- permission changes
+- reboot
+- shutdown
+- user management
+- credential changes
+- formatting
+- partition operations
+- destructive wildcards
+
+Do not execute shell commands silently.
+
+Do not automatically rerun commands.
+
+Do not execute a command when the authenticated Owner Console is not
+visibly active.
+
+Provide:
+
+- Run
+- Stop Process
+- Execution Timeout
+- Output Viewer
+- Copy Output
+- Clear Output
+- Saved Commands
+- Optional Working Directory when supported
+- Protected Owner Console History
+
+Do not include preloaded destructive command examples.
+
+Allow Owner Console to be disabled completely.
+
+==================================================
+30. AUTOMATION HISTORY
+==================================================
+
+Swipe right to open normal Automation History.
+
+Store locally:
+
+- timestamp
+- recognized command
+- parsed action
+- permission path
+- confirmation status
+- result
+- error details when useful
+
+Do not store raw audio.
+
+Do not store camera footage.
+
+Allow:
+
+- delete one record
+- clear normal history
+
+Keep Owner Console history separate and protected by authentication.
+
+==================================================
+31. PERMISSION CENTER
+==================================================
+
+Create a GUI Permissions screen.
+
+Show status and purpose for:
+
+- Microphone
+- Camera
+- Notifications
+- Media Access
+- Shizuku
+- Biometric or Device Authentication
+- Background Listening
+
+For each capability, show:
+
+- current status
+- what GUI uses it for
+- request or setup button
+- disable or revoke guidance
+
+Do not repeatedly request permission after denial.
+
+GUI must continue functioning when optional permissions are unavailable.
+
+==================================================
+32. FIRST-LAUNCH EXPERIENCE
+==================================================
+
+Use this full startup sequence:
+
+1. Completely black screen.
+2. Thin cyan power line appears.
+3. Faceplate circuits illuminate.
+4. Two angular lines form GUI's jaw.
+5. Segmented chin plate illuminates.
+6. Left eye powers on.
+7. Right eye powers on.
+8. Brows calibrate.
+9. GUI looks left.
+10. GUI looks right.
+11. GUI blinks.
+12. Mouth aperture activates.
+13. GUI gives a short greeting if voice output is ready.
+14. Gesture tutorial begins.
+
+Explain during onboarding:
+
+- GUI's name is spelled GUI and pronounced "guy"
+- wake words are GUI, DUDE, and BROHAM
+- face touch reactions
+- navigation gestures
+- voice output
+- microphone usage
+- wake-word options
+- sound reactions
+- optional Vision Mode
+- Privacy Mode
+- interruption and follow-up conversation
+- optional Shizuku integration
+- protected Owner Console
+
+Do not request every permission during startup.
+
+Request each permission only when the corresponding feature is enabled.
+
+==================================================
+33. ARCHITECTURE
+==================================================
+
+Organize the project with clear packages inside the supported Android
+app module.
+
+Suggested package structure:
+
+ui.face
+ui.settings
+ui.quickcontrols
+ui.commandcenter
+ui.expressionlab
+ui.permissions
+ui.history
+ui.console
+
+assistant.state
+assistant.hotword
+assistant.speech
+assistant.voice
+assistant.commands
+assistant.conversation
+
+automation.actions
+automation.shizuku
+automation.history
+
+media
+casting
+vision
+sound
+sensors
+data
+
+Suggested classes:
+
+MainActivity
+GuiApp
+GuiFaceScreen
+FaceCanvas
+FaceViewModel
+GuiExpression
+AssistantStateMachine
+HotwordEngine
+SpeechInputManager
+VoiceOutputManager
+MediaPipeVoiceBackend
+AndroidTtsBackend
+ConversationManager
+CommandParser
+CommandRouter
+ActionRegistry
+AutomationEngine
+ShizukuManager
+OwnerConsoleManager
+AppLauncher
+MediaCommandManager
+CastingManager
+VisionManager
+SoundReactionManager
+BatteryMonitor
+MotionSensorManager
+SettingsRepository
+AutomationHistoryRepository
+
+Use:
+
+- ViewModel
+- StateFlow
+- coroutines
+- structured concurrency
+- DataStore
+- lifecycle-aware resource management
+- dependency interfaces
+- sealed classes or enums for state and commands
+
+Do not retain an Activity context longer than necessary.
+
+==================================================
+34. PERFORMANCE
+==================================================
+
+GUI may remain visible for many hours.
+
+Optimize:
+
+- Compose Canvas drawing
+- recomposition
+- idle animation scheduling
+- glow rendering
+- sensor registration
+- camera analysis resolution
+- microphone lifecycle
+- model loading
+- TTS streaming
+- speech cancellation
+- foreground-service lifecycle
+- Shizuku binder usage
+
+Do not continuously redraw complicated effects when nothing is moving.
+
+Stop or release unnecessary resources when:
+
+- a feature is disabled
+- permission is revoked
+- Privacy Mode is enabled
+- the application lifecycle no longer requires the resource
+- the user enters Sleep Mode
+
+==================================================
+35. ERROR HANDLING
+==================================================
+
+Never crash because:
+
+- speech recognition is unavailable
+- on-device recognition is unavailable
+- wake-word detection is unavailable
+- Kokoro or MediaPipe is unavailable
+- system TTS is unavailable
+- a selected TTS voice is missing
+- microphone permission is denied
+- camera permission is denied
+- camera hardware is unavailable
+- Shizuku is unavailable
+- Shizuku disconnects
+- an installed app cannot be found
+- media access is unavailable
+- casting is unavailable
+- biometric authentication is unavailable
+- a gesture is canceled
+- Android configuration changes
+- GUI resumes from the background
+
+Use clear visual and spoken fallback messages.
+
+Never claim success unless the operation succeeded.
+
+==================================================
+36. IMPLEMENTATION ORDER
+==================================================
+
+Implement this project incrementally.
+
+PHASE 1:
+
+- complete heroic GUI face
+- faceplate and jawline
+- expressions
+- idle behavior
+- touch interactions
+- navigation gestures
+- Quick Controls
+- Settings
+- Expression Lab
+- AssistantStateMachine
+- Android TextToSpeech
+- SpeechRecognizer push-to-talk
+- interruption by tap and gesture
+- app launcher
+- web search
+- working, success, confused, and error states
+
+Compile and run the application.
+
+Fix all compilation and runtime errors before continuing.
+
+PHASE 2:
+
+- HotwordEngine architecture
+- GUI, DUDE, and BROHAM wake-word support when a compatible engine is
+  available
+- follow-up conversation window
+- full barge-in cancellation
+- MediaPipe Kokoro voice backend when supported
+- streaming voice playback
+- sound reactions
+- media controls
+- casting
+- Permission Center
+- Automation History
+
+Compile and test for regressions.
+
+PHASE 3:
+
+- Vision Mode
+- motion-direction reactions
+- ambient-brightness adaptation
+- motion-based waking
+
+Test camera features on a physical phone.
+
+PHASE 4:
+
+- Shizuku integration
+- registered advanced actions
+- protected Owner Console
+- authentication
+- command preview
+- confirmation
+- process output
+- stopping and timeout support
+- protected Owner Console history
+
+Verify the entire app still works without Shizuku.
+
+==================================================
+37. FINAL VALIDATION
+==================================================
+
+Before considering the build complete:
+
+1. Resolve all compilation errors.
+2. Resolve missing imports.
+3. Confirm dependency compatibility.
+4. Launch the app in the emulator.
+5. Verify GUI's face renders correctly.
+6. Verify the heroic jawline remains visible.
+7. Verify all expressions.
+8. Verify touch reactions.
+9. Verify all navigation gestures.
+10. Verify Settings persist.
+11. Verify the display name is always GUI.
+12. Verify GUI is pronounced "guy" in onboarding and voice-related UI.
+13. Verify GUI, DUDE, and BROHAM are represented as wake words.
+14. Verify each wake word has an individual toggle.
+15. Verify app launching.
+16. Verify web search.
+17. Verify speech stops immediately when interrupted.
+18. Verify abandoned speech does not resume.
+19. Verify follow-up listening.
+20. Verify two-finger tap always stops speech.
+21. Verify Privacy Mode stops microphone and camera processing.
+22. Verify denied permissions do not crash the app.
+23. Verify Shizuku absence does not crash the app.
+24. Verify Owner Console requires authentication.
+25. Verify voice recognition cannot automatically execute typed owner
+    shell commands.
+26. Verify GUI never falsely claims an action succeeded.
+27. Verify the app remains responsive after extended idle operation.
+
+==================================================
+38. MOST IMPORTANT DESIGN RULE
+==================================================
+
+GUI IS A CHARACTER, NOT A CHAT WINDOW.
+
+When GUI listens, the face listens.
+
+When GUI thinks, the eyes, brows, cheek lights, circuits, and jaw react.
+
+When GUI works, the face stays alive.
+
+When GUI speaks, the mouth aperture and jaw illumination move subtly.
+
+When the user interrupts, GUI stops talking immediately and listens.
+
+When GUI succeeds, the face communicates success.
+
+When GUI is confused, the face communicates confusion.
+
+When the user says "GUI," GUI responds normally.
+
+When the user says "Dude," GUI responds with a subtle casual reaction.
+
+When the user says "Broham," GUI gives a subtle confident reaction and
+brief heroic jaw illumination.
+
+The finished application should feel like a detailed, heroic robotic
+buddy named GUI living inside the physical MOBI Exo Suit.

@@ -1,0 +1,6 @@
+{
+  "name": "GUI",
+  "description": "Animated robotic companion and device-control assistant living inside the MOBI Exo Suit",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
